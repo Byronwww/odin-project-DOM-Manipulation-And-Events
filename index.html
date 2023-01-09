@@ -9,7 +9,59 @@
 <body>
   
     <div id = "body">
-        
+        <h1>Clickable Button</h1>
+        <p>
+            Method 1: button with event embedded into HTML <br />
+            <button onclick="alert('Hello World - Method 1')">Click Me</button>
+            <br />
+        </p>
+
+        <p>
+            Method 2: button event in external JS <br />
+            <button id="btn2">Click Me</button>
+            <br />
+        </p>
+
+        <p>
+            Method 3: button event in external JS and multiple events binded to single button<br />
+            <button id="btn3">Click Me Too</button>
+            <br />
+        </p>
+        <h1>Buttons with Named Function</h1>
+        <p>
+            Method 1: button with event embedded into HTML using a named function (function call in HTML)<br />
+            <button onclick="alertFunction()">CLICK ME</button>
+            <br />
+        </p>
+        <p>
+            Method 2: button with event embedded into HTML using a named function (function call in external javascript file)<br />
+            <button id='btnToClick1'>CLICK ME</button>
+            <br />
+        </p>   
+        <p>
+            Method 3: button with event embedded into HTML using a named function (event listener handling the function call in the external javascript file)<br />
+            <button id='btnToClick2'>CLICK ME</button>
+            <br />
+        </p>      
+        <h1>Buttons with Named Function - passing a parameter to the function</h1>
+        <p>
+            This button passes a parameter to the function with a callback<br />
+            <button id='paramButton'>CLICK ME</button>
+            <br />
+        </p>
+        <p>
+            This button passes a parameter to the function with a callback and does something else<br />
+            <button id='paramButton2'>CLICK ME</button>
+            <br />
+        </p>
+
+        <div id="container">
+            <button id="1">Click Me</button>
+            <button id="2">Click Me</button>
+            <button id="3">Click Me</button>
+        </div>
+    
+
     </div>
 	
 </body>
